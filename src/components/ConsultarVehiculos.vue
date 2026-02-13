@@ -40,6 +40,7 @@ export default {
         async eliminar(id){
             const token = localStorage.getItem("token");
             eliminarVehiculoFacade(id, token);
+            this.array = this.array;
     }
     }
 }

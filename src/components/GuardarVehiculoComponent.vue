@@ -49,6 +49,13 @@ export default {
             this.token = localStorage.getItem("token")
             await guardarVehiculoFacade(vehiculo, this.token);
             await this.obtenerVehiculos();
+
+            this.marca = '';
+            this.modelo = '';
+            this.chasis = '';
+            this.fechaMatricula = '';
+            this.fechaFab = '';
+            this.token = '';
         },
         async obtenerVehiculos(){
             this.token = localStorage.getItem("token")
